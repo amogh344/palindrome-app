@@ -1,13 +1,13 @@
 package com.example;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 public class AppTest {
+
     @Test
-    public void testSum() {
-        App classUnderTest = new App();
-        int result = classUnderTest.sum(3, 4);
-        assertEquals(7, result);
+    public void testIsPalindrome() {
+        assertTrue(App.isPalindrome("madam"));
+        assertFalse(App.isPalindrome("hello"));
     }
 }
